@@ -4,99 +4,138 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#090c11" />
-    <title>A Missão do Cristão</title>
+    <meta name="description" content="Guia interativo sobre a miss&#227;o do crist&#227;o: evangelismo, discipulado e vida no Reino." />
+    <title>A Miss&#227;o do Crist&#227;o</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true">
       <div class="scroll-progress__bar" id="scrollProgressBar"></div>
     </div>
- 
+
     <header class="hero" id="inicio">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="container hero__content">
         <div class="hero__top">
           <div class="pill">
             <span class="dot" aria-hidden="true"></span>
-            <span>Guia rápido</span>
+            <span>Guia r&#225;pido</span>
           </div>
           <button class="icon-btn" type="button" id="toggleTheme" aria-label="Alternar tema">
-            <span class="icon-btn__icon" aria-hidden="true">◐</span>
+            <svg class="icon-btn__svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg class="icon-btn__svg icon-btn__svg--moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
           </button>
         </div>
- 
-        <h1 class="hero__title">A Missão do Cristão</h1>
-        <p class="hero__subtitle">Sua fé não foi feita para ficar escondida. Descubra o propósito do envio.</p>
- 
+
+        <h1 class="hero__title">A Miss&#227;o<br/>do Crist&#227;o</h1>
+        <p class="hero__subtitle">Sua f&#233; n&#227;o foi feita para ficar escondida.<br class="hide-mobile"/>Descubra o prop&#243;sito do envio.</p>
+
         <div class="hero__actions">
-          <button class="btn btn--primary" type="button" data-jump="#missao">Começar</button>
-          <button class="btn btn--primary" type="button" data-jump="#perguntas">Refletir</button>
+          <button class="btn btn--primary" type="button" data-jump="#missao">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 16 16 12 12 8"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            Come&#231;ar
+          </button>
+          <button class="btn btn--ghost" type="button" data-jump="#perguntas">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            Refletir
+          </button>
         </div>
- 
+
         <div class="hero__quick">
           <div class="quick-card">
+            <div class="quick-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
             <div class="quick-card__title">Evangelho</div>
-            <div class="quick-card__text">Anunciar a salvação com ousadia.</div>
+            <div class="quick-card__text">Anunciar a salva&#231;&#227;o com ousadia.</div>
           </div>
           <div class="quick-card">
+            <div class="quick-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
             <div class="quick-card__title">Discipulado</div>
             <div class="quick-card__text">Caminhar junto e formar pessoas.</div>
           </div>
           <div class="quick-card">
+            <div class="quick-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
             <div class="quick-card__title">Reino</div>
-            <div class="quick-card__text">Viver a cultura do céu na terra.</div>
+            <div class="quick-card__text">Viver a cultura do c&#233;u na terra.</div>
           </div>
         </div>
       </div>
     </header>
- 
+
     <main class="main">
       <section class="section" id="missao" data-section>
         <div class="container">
           <div class="section__header">
-            <h2 class="section__title">O que é a missão</h2>
-            <p class="section__desc">Não é um evento, é a sua identidade.</p>
+            <span class="section__tag">01</span>
+            <h2 class="section__title">O que &#233; a miss&#227;o</h2>
+            <p class="section__desc">N&#227;o &#233; um evento, &#233; a sua identidade.</p>
           </div>
           <div class="card">
             <div class="card__row">
-              <div class="chip">Essência</div>
+              <div class="chip">Ess&#234;ncia</div>
               <div class="card__hint">Toque para expandir</div>
             </div>
-            <p class="muted muted--small">Missão é identidade, não atividade: Deus nos salva para nos enviar. É parte do plano de salvação — alcançados pela graça, participamos do avanço do Reino.</p>
+            <p class="muted muted--small">Miss&#227;o &#233; identidade, n&#227;o atividade: Deus nos salva para nos enviar. &#201; parte do plano de salva&#231;&#227;o &#8212; alcan&#231;ados pela gra&#231;a, participamos do avan&#231;o do Reino.</p>
             <div class="accordion" data-accordion>
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
-                  <span class="acc-title">Missão não é opcional</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-title">Miss&#227;o n&#227;o &#233; opcional</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>Fomos salvos para salvar. A missão é o envio direto de Jesus para anunciar o evangelho e viver o Reino de Deus na prática, todos os dias.</p>
-                    <p class="impact-line">“Se você é discípulo, você é enviado.”</p>
+                    <p>Fomos salvos para salvar. A miss&#227;o &#233; o envio direto de Jesus para anunciar o evangelho e viver o Reino de Deus na pr&#225;tica, todos os dias.</p>
+                    <p class="impact-line">&#8220;Se voc&#234; &#233; disc&#237;pulo, voc&#234; &#233; enviado.&#8221;</p>
                   </div>
                 </div>
               </div>
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
                   <span class="acc-title">Evangelismo e Discipulado</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>Não basta apenas falar de Jesus. Missão é caminhar junto, ensinar a guardar a Palavra e formar novos seguidores maduros (Mateus 28:19-20).</p>
-                    <p class="impact-line">“Evangelizar é pescar; discipular é limpar o peixe.”</p>
+                    <p>N&#227;o basta apenas falar de Jesus. Miss&#227;o &#233; caminhar junto, ensinar a guardar a Palavra e formar novos seguidores maduros (Mateus 28:19-20).</p>
+                    <p class="impact-line">&#8220;Evangelizar &#233; pescar; discipular &#233; limpar o peixe.&#8221;</p>
                   </div>
                 </div>
               </div>
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
                   <span class="acc-title">Sal e Luz na Vida Real</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>A missão acontece na escola, no trabalho e no seu ciclo de amigos. Sua conduta prega antes mesmo de você abrir a boca (Mateus 5:13-16).</p>
-                    <p class="impact-line">“Seja luz onde a escuridão é densa.”</p>
+                    <p>A miss&#227;o acontece na escola, no trabalho e no seu ciclo de amigos. Sua conduta prega antes mesmo de voc&#234; abrir a boca (Mateus 5:13-16).</p>
+                    <p class="impact-line">&#8220;Seja luz onde a escurid&#227;o &#233; densa.&#8221;</p>
                   </div>
                 </div>
               </div>
@@ -104,59 +143,73 @@
           </div>
         </div>
       </section>
- 
+
       <section class="section" id="base" data-section>
         <div class="container">
           <div class="section__header">
-            <h2 class="section__title">Base bíblica</h2>
+            <span class="section__tag">02</span>
+            <h2 class="section__title">Base b&#237;blica</h2>
             <p class="section__desc">O fundamento que sustenta nosso envio.</p>
           </div>
-          <div class="grid">
+          <div class="grid grid--2">
             <article class="card">
               <div class="card__row">
                 <div class="chip chip--accent">Mateus 28:19-20</div>
                 <span class="badge">O Mandato</span>
               </div>
-              <p class="muted">"Ide, portanto, fazei discípulos de todas as nações... ensinando-os a guardar todas as coisas que vos tenho ordenado."</p>
-              <p class="muted muted--small">Não é só falar: é formar discípulos e ensinar a obedecer. Missão gera gente parecida com Jesus.</p>
-              <button class="mini-link" type="button" data-verse="mt28">Ler</button>
+              <p class="muted">&#8220;Ide, portanto, fazei disc&#237;pulos de todas as na&#231;&#245;es... ensinando-os a guardar todas as coisas que vos tenho ordenado.&#8221;</p>
+              <p class="muted muted--small">N&#227;o &#233; s&#243; falar: &#233; formar disc&#237;pulos e ensinar a obedecer. Miss&#227;o gera gente parecida com Jesus.</p>
+              <button class="mini-link" type="button" data-verse="mt28">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                Ler mais
+              </button>
             </article>
             <article class="card">
               <div class="card__row">
                 <div class="chip chip--accent">Marcos 16:15</div>
                 <span class="badge">O Alcance</span>
               </div>
-              <p class="muted">"Ide por todo o mundo e pregai o evangelho a toda criatura." A mensagem não tem barreiras.</p>
-              <p class="muted muted--small">Alcance global: o evangelho não é para um grupo fechado. Onde você pisa, o “mundo” começa.</p>
-              <button class="mini-link" type="button" data-verse="mc16">Ler</button>
+              <p class="muted">&#8220;Ide por todo o mundo e pregai o evangelho a toda criatura.&#8221; A mensagem n&#227;o tem barreiras.</p>
+              <p class="muted muted--small">Alcance global: o evangelho n&#227;o &#233; para um grupo fechado. Onde voc&#234; pisa, o &#8220;mundo&#8221; come&#231;a.</p>
+              <button class="mini-link" type="button" data-verse="mc16">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                Ler mais
+              </button>
             </article>
             <article class="card">
               <div class="card__row">
                 <div class="chip chip--accent">Atos 1:8</div>
                 <span class="badge">O Poder</span>
               </div>
-              <p class="muted">"Mas recebereis poder ao descer sobre vós o Espírito Santo, e sereis minhas testemunhas." Missão não se faz na força humana.</p>
-              <p class="muted muted--small">Dependência do Espírito: testemunho não é performance. É presença + poder para viver e falar.</p>
-              <button class="mini-link" type="button" data-verse="at18">Ler</button>
+              <p class="muted">&#8220;Mas recebereis poder ao descer sobre v&#243;s o Esp&#237;rito Santo, e sereis minhas testemunhas.&#8221; Miss&#227;o n&#227;o se faz na for&#231;a humana.</p>
+              <p class="muted muted--small">Depend&#234;ncia do Esp&#237;rito: testemunho n&#227;o &#233; performance. &#201; presen&#231;a + poder para viver e falar.</p>
+              <button class="mini-link" type="button" data-verse="at18">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                Ler mais
+              </button>
             </article>
             <article class="card">
               <div class="card__row">
                 <div class="chip chip--accent">Mateus 5:13-16</div>
                 <span class="badge">O Testemunho</span>
               </div>
-              <p class="muted">"Vós sois o sal da terra... vós sois a luz do mundo... assim brilhe a vossa luz diante dos homens."</p>
-              <p class="muted muted--small">Viver como testemunho: sua vida torna o evangelho “visível”. Antes de discurso, existe caráter.</p>
-              <button class="mini-link" type="button" data-verse="mt513">Ler</button>
+              <p class="muted">&#8220;V&#243;s sois o sal da terra... v&#243;s sois a luz do mundo... assim brilhe a vossa luz diante dos homens.&#8221;</p>
+              <p class="muted muted--small">Viver como testemunho: sua vida torna o evangelho &#8220;vis&#237;vel&#8221;. Antes de discurso, existe car&#225;ter.</p>
+              <button class="mini-link" type="button" data-verse="mt513">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                Ler mais
+              </button>
             </article>
           </div>
         </div>
       </section>
- 
+
       <section class="section" id="viver" data-section>
         <div class="container">
           <div class="section__header">
+            <span class="section__tag">03</span>
             <h2 class="section__title">Como viver isso</h2>
-            <p class="section__desc">Prática diária.</p>
+            <p class="section__desc">Pr&#225;tica di&#225;ria.</p>
           </div>
           <div class="card">
             <div class="steps">
@@ -164,27 +217,27 @@
                 <div class="step__n">1</div>
                 <div class="step__body">
                   <div class="step__title">Seja Sal e Luz hoje</div>
-                  <div class="step__text">No grupo da faculdade, no trabalho e nas redes sociais, sua ética e amor devem apontar para Cristo. Suas ações pregam.</div>
+                  <div class="step__text">No grupo da faculdade, no trabalho e nas redes sociais, sua &#233;tica e amor devem apontar para Cristo. Suas a&#231;&#245;es pregam.</div>
                 </div>
               </div>
               <div class="step">
                 <div class="step__n">2</div>
                 <div class="step__body">
-                  <div class="step__title">Invista em alguém</div>
-                  <div class="step__text">Discipulado é relacionamento. Escolha alguém para ouvir, orar junto e ajudar a crescer na fé (na igreja e fora dela).</div>
+                  <div class="step__title">Invista em algu&#233;m</div>
+                  <div class="step__text">Discipulado &#233; relacionamento. Escolha algu&#233;m para ouvir, orar junto e ajudar a crescer na f&#233; (na igreja e fora dela).</div>
                 </div>
               </div>
               <div class="step">
                 <div class="step__n">3</div>
                 <div class="step__body">
-                  <div class="step__title">Dependa do Espírito</div>
-                  <div class="step__text">Sem oração e sem o poder de Atos 1:8, a missão vira apenas ativismo. Busque a presença dEle.</div>
+                  <div class="step__title">Dependa do Esp&#237;rito</div>
+                  <div class="step__text">Sem ora&#231;&#227;o e sem o poder de Atos 1:8, a miss&#227;o vira apenas ativismo. Busque a presen&#231;a dEle.</div>
                 </div>
               </div>
             </div>
             <div class="divider"></div>
-            <p class="muted">Missão é cotidiano: família, escola, trabalho, internet. Não é “só na igreja”.</p>
-            <p class="muted muted--small">Viva antes de falar. Quando você fala, suas palavras já vêm com credibilidade.</p>
+            <p class="muted">Miss&#227;o &#233; cotidiano: fam&#237;lia, escola, trabalho, internet. N&#227;o &#233; &#8220;s&#243; na igreja&#8221;.</p>
+            <p class="muted muted--small">Viva antes de falar. Quando voc&#234; fala, suas palavras j&#225; v&#234;m com credibilidade.</p>
           </div>
           <div class="card">
             <div class="card__row">
@@ -194,28 +247,30 @@
             <div class="accordion" data-accordion data-single="true">
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
-                  <span class="acc-title">Missões no dia a dia (Individual)</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-title">Miss&#245;es no dia a dia (Individual)</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>A missão começa no cotidiano.</p>
-                    <p>Escola, faculdade, trabalho e redes sociais já são campo.</p>
-                    <p>Você foi enviado onde já está (Mateus 5:13-16; Atos 1:8) e precisa estar pronto para responder com mansidão sobre sua esperança (1 Pedro 3:15).</p>
-                    <p class="muted muted--small"><strong>Na prática:</strong></p>
-                    <p class="muted muted--small">• Comece pequeno e seja constante.</p>
-                    <p class="muted muted--small">• Viver com coerência onde ninguém está olhando.</p>
-                    <p class="muted muted--small">• Falar de Jesus com naturalidade, sem forçar.</p>
-                    <p class="muted muted--small">• Orar por amigos específicos e ser presença constante.</p>
-                    <p class="muted muted--small">• Influenciar sem precisar “performar” espiritualidade.</p>
+                    <p>A miss&#227;o come&#231;a no cotidiano.</p>
+                    <p>Escola, faculdade, trabalho e redes sociais j&#225; s&#227;o campo.</p>
+                    <p>Voc&#234; foi enviado onde j&#225; est&#225; (Mateus 5:13-16; Atos 1:8) e precisa estar pronto para responder com mansid&#227;o sobre sua esperan&#231;a (1 Pedro 3:15).</p>
+                    <p class="muted muted--small"><strong>Na pr&#225;tica:</strong></p>
+                    <p class="muted muted--small">&#8226; Comece pequeno e seja constante.</p>
+                    <p class="muted muted--small">&#8226; Viver com coer&#234;ncia onde ningu&#233;m est&#225; olhando.</p>
+                    <p class="muted muted--small">&#8226; Falar de Jesus com naturalidade, sem for&#231;ar.</p>
+                    <p class="muted muted--small">&#8226; Orar por amigos espec&#237;ficos e ser presen&#231;a constante.</p>
+                    <p class="muted muted--small">&#8226; Influenciar sem precisar &#8220;performar&#8221; espiritualidade.</p>
                     <p class="muted muted--small muted--spaced"><strong>Erro comum:</strong></p>
-                    <p class="muted muted--small">• Esperar estar “pronto demais”.</p>
-                    <p class="muted muted--small">• Achar que missão é só evento.</p>
+                    <p class="muted muted--small">&#8226; Esperar estar &#8220;pronto demais&#8221;.</p>
+                    <p class="muted muted--small">&#8226; Achar que miss&#227;o &#233; s&#243; evento.</p>
                     <p class="muted muted--small muted--spaced"><strong>O que muda:</strong></p>
-                    <p class="muted muted--small">• Pessoas começam a perceber diferença.</p>
-                    <p class="muted muted--small">• Oportunidades surgem naturalmente.</p>
-                    <p class="muted muted--small">• Sua fé deixa de ser teoria.</p>
-                    <p class="impact-line">“Você não precisa ir longe para viver missão — você já foi enviado.”</p>
+                    <p class="muted muted--small">&#8226; Pessoas come&#231;am a perceber diferen&#231;a.</p>
+                    <p class="muted muted--small">&#8226; Oportunidades surgem naturalmente.</p>
+                    <p class="muted muted--small">&#8226; Sua f&#233; deixa de ser teoria.</p>
+                    <p class="impact-line">&#8220;Voc&#234; n&#227;o precisa ir longe para viver miss&#227;o &#8212; voc&#234; j&#225; foi enviado.&#8221;</p>
                   </div>
                 </div>
               </div>
@@ -223,36 +278,41 @@
           </div>
         </div>
       </section>
- 
+
       <section class="section" id="grupo" data-section>
         <div class="container">
           <div class="section__header">
-            <h2 class="section__title">Missão em grupo</h2>
+            <span class="section__tag">04</span>
+            <h2 class="section__title">Miss&#227;o em grupo</h2>
             <p class="section__desc">A igreja primitiva crescia porque vivia junto (Atos 2).</p>
           </div>
           <div class="card">
-            <p class="muted muted--small">Em Atos 2, a igreja vivia comunhão, partilha, oração e testemunho — e isso transbordava para fora. Missão é coletiva.</p>
+            <p class="muted muted--small">Em Atos 2, a igreja vivia comunh&#227;o, partilha, ora&#231;&#227;o e testemunho &#8212; e isso transbordava para fora. Miss&#227;o &#233; coletiva.</p>
             <div class="accordion" data-accordion data-single="true">
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
-                  <span class="acc-title">Fé que se espalha junto</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-title">F&#233; que se espalha junto</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>O cristianismo nunca foi um projeto solo. Quando o grupo de jovens ou a célula vive a missão de forma unida, o impacto na cidade multiplica.</p>
-                    <p class="muted muted--small muted--spaced">Comunhão forte sustenta evangelismo forte.</p>
+                    <p>O cristianismo nunca foi um projeto solo. Quando o grupo de jovens ou a c&#233;lula vive a miss&#227;o de forma unida, o impacto na cidade multiplica.</p>
+                    <p class="muted muted--small muted--spaced">Comunh&#227;o forte sustenta evangelismo forte.</p>
                   </div>
                 </div>
               </div>
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
-                  <span class="acc-title">Servindo à comunidade</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-title">Servindo &#224; comunidade</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>Usem os dons de cada um. Projetos sociais, ajuda a quem precisa e evangelismo criativo mostram que o amor de Deus é prático, não apenas teoria.</p>
+                    <p>Usem os dons de cada um. Projetos sociais, ajuda a quem precisa e evangelismo criativo mostram que o amor de Deus &#233; pr&#225;tico, n&#227;o apenas teoria.</p>
                     <p class="muted muted--small muted--spaced">Cuidado sem evangelho vira filantropia; evangelho sem cuidado vira discurso.</p>
                   </div>
                 </div>
@@ -260,39 +320,43 @@
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
                   <span class="acc-title">Cuidando uns dos outros</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>A missão externa perde a força se o amor interno for fraco. Discipulem uns aos outros. Um grupo curado e forte alcança mais longe.</p>
+                    <p>A miss&#227;o externa perde a for&#231;a se o amor interno for fraco. Discipulem uns aos outros. Um grupo curado e forte alcan&#231;a mais longe.</p>
                     <p class="muted muted--small muted--spaced">Cuidado interno prepara pessoas para o envio.</p>
                   </div>
                 </div>
               </div>
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
-                  <span class="acc-title">Missões como mocidade (Grupo)</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-title">Miss&#245;es como mocidade (Grupo)</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>A missão não foi feita para ser vivida sozinho.</p>
-                    <p>A mocidade cresce quando vive propósito junto: comunhão, serviço e evangelismo em unidade (Atos 2:42-47).</p>
-                    <p>Deus também envia em grupo (Atos 13:1-3) — porque dois valem mais que um (Eclesiastes 4:9-10).</p>
-                    <p class="muted muted--small"><strong>Na prática:</strong></p>
-                    <p class="muted muted--small">• Comecem pequeno, mas juntos.</p>
-                    <p class="muted muted--small">• Evangelizar com amigos: presença + coragem.</p>
-                    <p class="muted muted--small">• Discipular em duplas ou pequenos grupos, com constância.</p>
-                    <p class="muted muted--small">• Orar juntos por pessoas específicas e acompanhar.</p>
-                    <p class="muted muted--small">• Servir a comunidade como equipe, com propósito claro.</p>
+                    <p>A miss&#227;o n&#227;o foi feita para ser vivida sozinho.</p>
+                    <p>A mocidade cresce quando vive prop&#243;sito junto: comunh&#227;o, servi&#231;o e evangelismo em unidade (Atos 2:42-47).</p>
+                    <p>Deus tamb&#233;m envia em grupo (Atos 13:1-3) &#8212; porque dois valem mais que um (Eclesiastes 4:9-10).</p>
+                    <p class="muted muted--small"><strong>Na pr&#225;tica:</strong></p>
+                    <p class="muted muted--small">&#8226; Comecem pequeno, mas juntos.</p>
+                    <p class="muted muted--small">&#8226; Evangelizar com amigos: presen&#231;a + coragem.</p>
+                    <p class="muted muted--small">&#8226; Discipular em duplas ou pequenos grupos, com const&#226;ncia.</p>
+                    <p class="muted muted--small">&#8226; Orar juntos por pessoas espec&#237;ficas e acompanhar.</p>
+                    <p class="muted muted--small">&#8226; Servir a comunidade como equipe, com prop&#243;sito claro.</p>
                     <p class="muted muted--small muted--spaced"><strong>Erro comum:</strong></p>
-                    <p class="muted muted--small">• Querer “movimento” sem constância.</p>
-                    <p class="muted muted--small">• Achar que missão é só evento.</p>
+                    <p class="muted muted--small">&#8226; Querer &#8220;movimento&#8221; sem const&#226;ncia.</p>
+                    <p class="muted muted--small">&#8226; Achar que miss&#227;o &#233; s&#243; evento.</p>
                     <p class="muted muted--small muted--spaced"><strong>O que muda:</strong></p>
-                    <p class="muted muted--small">• A união vira coragem para agir.</p>
-                    <p class="muted muted--small">• A influência aumenta sem forçar.</p>
-                    <p class="muted muted--small">• A missão deixa de ser ideia e vira movimento.</p>
-                    <p class="impact-line">“Quando a mocidade anda unida, a missão deixa de ser ideia e vira movimento.”</p>
+                    <p class="muted muted--small">&#8226; A uni&#227;o vira coragem para agir.</p>
+                    <p class="muted muted--small">&#8226; A influ&#234;ncia aumenta sem for&#231;ar.</p>
+                    <p class="muted muted--small">&#8226; A miss&#227;o deixa de ser ideia e vira movimento.</p>
+                    <p class="impact-line">&#8220;Quando a mocidade anda unida, a miss&#227;o deixa de ser ideia e vira movimento.&#8221;</p>
                   </div>
                 </div>
               </div>
@@ -300,10 +364,11 @@
           </div>
         </div>
       </section>
- 
+
       <section class="section" id="erros" data-section>
         <div class="container">
           <div class="section__header">
+            <span class="section__tag">05</span>
             <h2 class="section__title">Erros comuns</h2>
             <p class="section__desc">Armadilhas que travam o nosso chamado.</p>
           </div>
@@ -311,67 +376,79 @@
             <div class="accordion" data-accordion data-single="false">
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
-                  <span class="acc-title">Separar o "sagrado" do "secular"</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-title">Separar o &#8220;sagrado&#8221; do &#8220;secular&#8221;</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>Achar que missão só acontece no culto de domingo. Sua rotina na segunda-feira é o seu principal campo missionário.</p>
+                    <p>Achar que miss&#227;o s&#243; acontece no culto de domingo. Sua rotina na segunda-feira &#233; o seu principal campo mission&#225;rio.</p>
                   </div>
                 </div>
               </div>
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
-                  <span class="acc-title">Focar em números, não em pessoas</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-title">Focar em n&#250;meros, n&#227;o em pessoas</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>Jesus focou em 12 para alcançar o mundo. Mais vale um discípulo sólido do que dezenas de convertidos que não são acompanhados.</p>
+                    <p>Jesus focou em 12 para alcan&#231;ar o mundo. Mais vale um disc&#237;pulo s&#243;lido do que dezenas de convertidos que n&#227;o s&#227;o acompanhados.</p>
                   </div>
                 </div>
               </div>
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
                   <span class="acc-title">Pregar sem viver o que fala</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>Suas palavras têm peso, mas sua vida tem volume. O maior tropeço do evangelho é um discurso bonito sem atitudes reais de amor.</p>
+                    <p>Suas palavras t&#234;m peso, mas sua vida tem volume. O maior trope&#231;o do evangelho &#233; um discurso bonito sem atitudes reais de amor.</p>
                   </div>
                 </div>
               </div>
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
-                  <span class="acc-title">Missão não é só pregar</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-title">Miss&#227;o n&#227;o &#233; s&#243; pregar</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>Pregar sem discipular e sem viver o Reino vira barulho. Missão une mensagem + vida + caminho junto.</p>
+                    <p>Pregar sem discipular e sem viver o Reino vira barulho. Miss&#227;o une mensagem + vida + caminho junto.</p>
                   </div>
                 </div>
               </div>
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
-                  <span class="acc-title">Missão não é só ação social</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-title">Miss&#227;o n&#227;o &#233; s&#243; a&#231;&#227;o social</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>Servir é bíblico e necessário. Mas se o evangelho some, o que sobra é só melhoria de vida — não nova vida.</p>
+                    <p>Servir &#233; b&#237;blico e necess&#225;rio. Mas se o evangelho some, o que sobra &#233; s&#243; melhoria de vida &#8212; n&#227;o nova vida.</p>
                   </div>
                 </div>
               </div>
               <div class="acc-item">
                 <button class="acc-trigger" type="button" aria-expanded="false">
-                  <span class="acc-title">Missão não é só para líderes</span>
-                  <span class="acc-icon" aria-hidden="true">+</span>
+                  <span class="acc-title">Miss&#227;o n&#227;o &#233; s&#243; para l&#237;deres</span>
+                  <span class="acc-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
                 </button>
                 <div class="acc-panel" role="region">
                   <div class="acc-panel__inner">
-                    <p>Atos 1:8 não é para “os profissionais”. Todo cristão é testemunha — no seu bairro, sala, feed e rotina.</p>
+                    <p>Atos 1:8 n&#227;o &#233; para &#8220;os profissionais&#8221;. Todo crist&#227;o &#233; testemunha &#8212; no seu bairro, sala, feed e rotina.</p>
                   </div>
                 </div>
               </div>
@@ -379,43 +456,57 @@
           </div>
         </div>
       </section>
- 
+
       <section class="section" id="perguntas" data-section>
         <div class="container">
           <div class="section__header">
+            <span class="section__tag">06</span>
             <h2 class="section__title">Perguntas para refletir</h2>
-            <p class="section__desc">Toque em uma pergunta, seja sincero e deixe o Espírito falar.</p>
+            <p class="section__desc">Toque em uma pergunta, seja sincero e deixe o Esp&#237;rito falar.</p>
           </div>
-          <div class="grid">
+          <div class="grid grid--2">
             <button class="reflect-card" type="button" data-reflect>
               <div class="reflect-card__q">A minha vida atrai ou afasta as pessoas de Jesus?</div>
-              <div class="reflect-card__a">Se as pessoas ao seu redor só tivessem a sua vida como Bíblia, o que elas leriam sobre Deus?</div>
+              <div class="reflect-card__a">Se as pessoas ao seu redor s&#243; tivessem a sua vida como B&#237;blia, o que elas leriam sobre Deus?</div>
             </button>
             <button class="reflect-card" type="button" data-reflect>
               <div class="reflect-card__q">Eu falo de Cristo com meus amigos ou tenho vergonha?</div>
-              <div class="reflect-card__a">O silêncio sobre Jesus muitas vezes não é respeito ao próximo, é medo de não ser aceito. Quem você pode convidar essa semana?</div>
+              <div class="reflect-card__a">O sil&#234;ncio sobre Jesus muitas vezes n&#227;o &#233; respeito ao pr&#243;ximo, &#233; medo de n&#227;o ser aceito. Quem voc&#234; pode convidar essa semana?</div>
             </button>
             <button class="reflect-card" type="button" data-reflect>
-              <div class="reflect-card__q">Eu oro por aqueles que ainda não conhecem a verdade?</div>
-              <div class="reflect-card__a">A missão começa de joelhos. Se não há compaixão no secreto, não haverá poder no público. Comece a orar hoje por alguém específico.</div>
+              <div class="reflect-card__q">Eu oro por aqueles que ainda n&#227;o conhecem a verdade?</div>
+              <div class="reflect-card__a">A miss&#227;o come&#231;a de joelhos. Se n&#227;o h&#225; compaix&#227;o no secreto, n&#227;o haver&#225; poder no p&#250;blico. Comece a orar hoje por algu&#233;m espec&#237;fico.</div>
             </button>
             <button class="reflect-card" type="button" data-reflect>
-              <div class="reflect-card__q">Eu estou vivendo a missão ou só concordando com ela?</div>
-              <div class="reflect-card__a">Saber o que é certo não é o mesmo que viver o que é certo. A missão não é algo para admirar, é algo para praticar. Em que área da sua vida você sabe o que precisa fazer, mas ainda não fez?</div>
+              <div class="reflect-card__q">Eu estou vivendo a miss&#227;o ou s&#243; concordando com ela?</div>
+              <div class="reflect-card__a">Saber o que &#233; certo n&#227;o &#233; o mesmo que viver o que &#233; certo. A miss&#227;o n&#227;o &#233; algo para admirar, &#233; algo para praticar. Em que &#225;rea da sua vida voc&#234; sabe o que precisa fazer, mas ainda n&#227;o fez?</div>
             </button>
             <button class="reflect-card" type="button" data-reflect>
-              <div class="reflect-card__q">Alguém está mais perto de Deus por causa da minha vida?</div>
-              <div class="reflect-card__a">Missão não é só evitar o erro, é gerar impacto. Sua vida está influenciando alguém espiritualmente ou passando despercebida? Quem Deus colocou perto de você que precisa de direção?</div>
+              <div class="reflect-card__q">Algu&#233;m est&#225; mais perto de Deus por causa da minha vida?</div>
+              <div class="reflect-card__a">Miss&#227;o n&#227;o &#233; s&#243; evitar o erro, &#233; gerar impacto. Sua vida est&#225; influenciando algu&#233;m espiritualmente ou passando despercebida? Quem Deus colocou perto de voc&#234; que precisa de dire&#231;&#227;o?</div>
             </button>
             <button class="reflect-card" type="button" data-reflect>
-              <div class="reflect-card__q">Se eu continuar vivendo assim, estou cumprindo meu propósito?</div>
-              <div class="reflect-card__a">A rotina pode te distrair do propósito. Trabalho, estudo, redes… tudo pode ocupar espaço, mas não substituir a missão. Sua vida está alinhada com o que Deus te chamou para viver?</div>
+              <div class="reflect-card__q">Se eu continuar vivendo assim, estou cumprindo meu prop&#243;sito?</div>
+              <div class="reflect-card__a">A rotina pode te distrair do prop&#243;sito. Trabalho, estudo, redes&#8230; tudo pode ocupar espa&#231;o, mas n&#227;o substituir a miss&#227;o. Sua vida est&#225; alinhada com o que Deus te chamou para viver?</div>
             </button>
           </div>
         </div>
       </section>
     </main>
- 
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <p class="footer__text">Feito com f&#233; e prop&#243;sito.</p>
+          <p class="footer__verse">&#8220;Ide por todo o mundo e pregai o evangelho a toda criatura.&#8221; &#8212; Marcos 16:15</p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Voltar ao topo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
     <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
     <div class="modal" id="verseModal" aria-hidden="true">
       <div class="modal__overlay" data-modal-close></div>
@@ -423,46 +514,46 @@
         <div class="modal__header">
           <div class="modal__title" id="verseModalTitle"></div>
           <button class="modal__close" type="button" aria-label="Fechar" data-modal-close>
-            <span aria-hidden="true">×</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
           </button>
         </div>
         <div class="modal__body">
           <div class="modal__section">
-            <div class="modal__label">Explicação</div>
+            <div class="modal__label">Explica&#231;&#227;o</div>
             <div class="modal__text" id="verseModalExplain"></div>
           </div>
           <div class="modal__section">
-            <div class="modal__label">Aplicação</div>
+            <div class="modal__label">Aplica&#231;&#227;o</div>
             <div class="modal__text" id="verseModalApply"></div>
           </div>
           <div class="modal__impact" id="verseModalImpact"></div>
         </div>
       </div>
     </div>
- 
-    <nav class="bottom-nav" aria-label="Navegação">
+
+    <nav class="bottom-nav" aria-label="Navega&#231;&#227;o">
       <button class="bottom-nav__item" type="button" data-jump="#inicio" data-nav>
-        <span class="bottom-nav__icon" aria-hidden="true">⌂</span>
-        <span class="bottom-nav__label">Início</span>
+        <svg class="bottom-nav__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span class="bottom-nav__label">In&#237;cio</span>
       </button>
       <button class="bottom-nav__item" type="button" data-jump="#missao" data-nav>
-        <span class="bottom-nav__icon" aria-hidden="true">◎</span>
-        <span class="bottom-nav__label">Missão</span>
+        <svg class="bottom-nav__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        <span class="bottom-nav__label">Miss&#227;o</span>
       </button>
       <button class="bottom-nav__item" type="button" data-jump="#base" data-nav>
-        <span class="bottom-nav__icon" aria-hidden="true">⟐</span>
+        <svg class="bottom-nav__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
         <span class="bottom-nav__label">Base</span>
       </button>
       <button class="bottom-nav__item" type="button" data-jump="#grupo" data-nav>
-        <span class="bottom-nav__icon" aria-hidden="true">◌</span>
+        <svg class="bottom-nav__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         <span class="bottom-nav__label">Grupo</span>
       </button>
       <button class="bottom-nav__item" type="button" data-jump="#perguntas" data-nav>
-        <span class="bottom-nav__icon" aria-hidden="true">?</span>
+        <svg class="bottom-nav__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         <span class="bottom-nav__label">Refletir</span>
       </button>
     </nav>
- 
+
     <script src="app.js" defer></script>
   </body>
 </html>
