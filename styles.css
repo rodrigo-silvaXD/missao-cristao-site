@@ -903,9 +903,9 @@ html[data-theme="light"] .modal__impact{
   right: 0;
   bottom: 0;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 6px;
-  padding: 10px 10px calc(10px + env(safe-area-inset-bottom));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 5px;
+  padding: 10px 8px calc(10px + env(safe-area-inset-bottom));
   background: linear-gradient(180deg, rgba(9,12,17,0), rgba(9,12,17,.88) 30%, rgba(9,12,17,.98));
   backdrop-filter: blur(14px);
   z-index: 15;
@@ -918,7 +918,7 @@ html[data-theme="light"] .bottom-nav{
   background: var(--surface);
   border-radius: 16px;
   min-height: 58px;
-  padding: 8px 6px;
+  padding: 8px 4px;
   cursor: pointer;
   display: grid;
   gap: 3px;
@@ -939,7 +939,7 @@ html[data-theme="light"] .bottom-nav{
   transition: opacity var(--dur) var(--easing), transform var(--dur) var(--easing);
 }
 .bottom-nav__label{
-  font-size: 10.5px;
+  font-size: 10px;
   font-weight: 500;
   color: var(--muted-2);
   transition: color var(--dur) var(--easing);
@@ -968,6 +968,18 @@ html[data-theme="light"] .bottom-nav{
   border-color: rgba(56,189,248,.25);
   transform: translateY(-2px);
   box-shadow: 0 18px 52px rgba(56,189,248,.10), var(--shadow);
+}
+
+#espirito .card{
+  border-color: rgba(139,92,246,.20);
+  box-shadow: 0 18px 52px rgba(139,92,246,.12), var(--shadow);
+}
+#espirito .chip--accent{
+  border-color: rgba(139,92,246,.35);
+  background: linear-gradient(180deg, rgba(139,92,246,.14), rgba(139,92,246,.06));
+}
+#espirito .step__n{
+  background: linear-gradient(135deg, rgba(139,92,246,.90), rgba(251,113,133,.60));
 }
 
 /* ===== FOOTER ===== */
